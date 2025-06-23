@@ -5,7 +5,7 @@ const commentSchema = new Schema(
     {
         content: {
             type: String,
-            required: true
+            required: [true, "content is required."]
         },
         video: {
             type: Schema.Types.ObjectId,
